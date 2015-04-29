@@ -2,4 +2,7 @@
 
 ##test
 
-A very small repository for testing our Git interface. See the [`stencila/cpp/tests/git.cpp`](https://github.com/stencila/stencila/blob/master/cpp/tests/git.cpp) test file for why we have this and how we use it.
+A small repository is for testing Stencila's integrations with Git and Github. We use it for
+
+- testing that our [C++ interface](https://github.com/stencila/stencila/blob/master/cpp/stencila/git.hpp) to [libgit2(https://libgit2.github.com/) is working properly (see [`stencila/cpp/tests/git.cpp`](https://github.com/stencila/stencila/blob/master/cpp/tests/git.cpp))
+- testing our integration with [Travis CI]()

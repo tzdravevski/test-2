@@ -1,0 +1,5 @@
+sudo: required
+dist: trusty
+
+script:
+  - python -c "import sys; print sys.maxunicode"

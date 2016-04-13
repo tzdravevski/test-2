@@ -1,5 +1,10 @@
 sudo: required
 dist: trusty
 
+before_install:
+  # Try to get python2.7 with UCS4 : https://github.com/travis-ci/travis-ci/issues/4948#issuecomment-165779970
+  - export PATH=$(echo $PATH | tr ':' "\n" | sed '/\/opt\/python/d' | tr "\n" ":" | sed "s|::|:|g")
+
 script:
-  - python -c "import sys; print sys.maxunicode"
+  - python2.7 --version
+  - python2.7 -c "import sys; print sys.maxunicode"

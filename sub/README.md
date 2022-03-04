@@ -1,2 +1,1 @@
-Hello from the subdirectory `sub`!
-
+Hello from the subdirectory `sub`!!
